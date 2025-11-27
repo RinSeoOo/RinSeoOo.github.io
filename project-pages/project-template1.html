@@ -1,0 +1,150 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="/assets/images/coco_hihi.jpg" />
+     <title>Cyber Engineer Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/utilities.css">
+
+		<script defer src="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Infra&Web 취약점진단</div>
+        <div class="body-text">SK쉴더스 루키즈 과정에서 팀 단위로 AWS 환경에 웹 애플리케이션을 구축하고, 이를 대상으로 KISA 기반시설 기술적 취약점 분석 평가 상세 가이드와 SK쉴더스 내부 가이드 기준으로 취약점 진단을 수행했습니다. 인증·세션, 입력 검증, 서버 설정 등 주요 영역을 중심으로 식별된 취약점에 대해 이행 조치를 적용했으며, 최종적으로 보안 설정을 강화한 개선 버전을 도출했습니다. </div>
+        <image class="project-header-image" src="/assets/images/jwpmagicshop.png"/> <!--jwp 매직샵 이미지-->
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="project-subtitle">역할 및 세부 수행 내역</div>
+          <div class="project-text">
+            - 주어진 웹 사이트에 대해 취약점 진단을 하기 위해 세부 기능을 구현했다. </br>
+            - KISA 및 SK쉴더스 내부 가이드를 기반으로 웹 취약점 진단을 수행하고, 식별된 취약점에 대한 개선 조치를 적용했다.  </br>
+            - 취약점진단 수행 후, 수동진단과 자동진단 결과물을 비교하기 위해 자동화 스크립트 제작을 맡았다. </br>
+            - 진단 결과와 개선 사항을 기반으로 분석 보고서를 작성하여 프로젝트 산출물의 완성도를 높였다.
+          </div>
+        </div>
+        <div class="project-details-content">
+          <div class="project-subtitle">수행 작업</div>
+          <div class="project-text">
+            - AWS 기반의 3-Tier 아키텍처를 구성하여 취약점 진단 환경을 구축했다. </br>
+            - Web은 Ubuntu 기반 Apache, WAS는 Debian 기반 Tomcat, DBMS는 Windows 환경의 Oracle로 각각 분리 구성하여 실제 서비스와 유사한 구조에서 진단을 수행했다.
+          </div>
+        </div>
+        <div class="project-details-content">
+          <div class="project-subtitle">결과</div>
+          <div class="project-text">- 취약점에 대한 이행조치 이후 평가등급(TCSEC) 기준으로 50.2%였던 보안수준 점수가 98.0%로 평균 47.8%p 증가했다.</div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="/assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="/assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+                  <div class="gallery-image-container half-width">
+              <img src="/assets/images/project_wbs.png" class="gallery-image"> <!--WBS-->
+              <span class="image-caption">프로젝트를 진행한 2달 동안 작성한 WBS </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="/assets/images/vulnerabilityAssessment.png" class="gallery-image"> <!--취약점진단 결과보고서-->
+              <span class="image-caption">WEB, WAS, DBMS, 클라우드, 웹 취약점 진단 결과 보고서</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="/assets/images/vulnerabilityRemediation.png" class="gallery-image"> <!--취약점진단 결과보고서-->
+              <span class="image-caption">WEB, WAS, DBMS, 클라우드, 웹 취약점 이행점검 결과 보고서 </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="/assets/images/dbms_script.png" class="gallery-image"> <!--취약점진단 결과보고서-->
+              <span class="image-caption">수동진단과의 비교를 위한 DBMS(oracle) 자동화 스크립트 (in Windows)</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script>
+      $(function() {
+        $("#navbar").load("/html/navbar.html");
+        $("#footer").load("/html/footer.html");
+      });
+    </script>
+
+	</body>
+</html>

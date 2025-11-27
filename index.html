@@ -13,29 +13,21 @@
 
       This should be the same across all pages.
      -->
-    <link rel="icon" href="./assets/images/1311.png" />
-		<title>Unemployables Portfolio</title>
+    <link rel="icon" href="/assets/images/coco_hihi.jpg" />
+		<title>Cyber Engineer Portfolio</title>
     <meta name="description" content="A portfolio template for the Unemployables community.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+		<link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/utilities.css">
 
-		<script defer src="./js/script.js"></script>
+		<script defer src="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	</head>
 	<body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
-          <span class="button-text">Contact Me</span>
-        </a>
-      </a>
-    </div>
+    <div id="navbar"></div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -50,9 +42,9 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
+          <img src="/assets/images/coco_hihi.jpg" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="https://github.com/RinSeoOo">
+            <span class="image-caption">@RinSeoOo (문서영)</span>
           </a>
         </div>
 
@@ -65,12 +57,13 @@
           -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <span class="main-title">Hey, I'm </br>Moon Seoyoung.</span>
+              <div class="body-text">
+                저는 보안 사고를 줄이고 사람들이 보안에 더 관심을 갖도록 하는 것을 목표로 하는 사이버 보안 엔지니어입니다.</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <img src="/assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
         </div>
       </div>
@@ -83,12 +76,57 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
       <div id="about-section">
-        <span class="subheader-text">My Background / About Me</span>
+        <span class="subheader-text">Introduction</span>
         <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">ffff</div>
         </div>
       </div>
+
+      <div id="about-section">
+        <span class="subheader-text">Education</span>
+
+        <div class="about-section-content">
+          <div class="section-header">
+            <div class="section-title">단국대학교 · 모바일시스템공학과</div>
+            <div class="section-year">2023.03 ~ 2026.03 | 편입/졸업</div>
+          </div>
+          <div class="section-desc">
+            - 임베디드 시스템 기초 학습  </br>
+            - 네트워크 및 보안 기초 과목 이수
+          </div>
+        </div>
+
+        <div class="about-section-content">
+          <div class="section-header">
+            <div class="section-title">금오공과대학교 · 산업공학과</div>
+            <div class="section-year">2021.03 ~ 2023.02 | 자퇴</div>
+          </div>
+          <div class="section-desc">
+            - 산업공학 기초 과목 이수  </br>
+          </div>
+        </div>
+
+      </br></br>
+
+        <div class="about-section-content">
+          <div class="section-header">
+            <div class="section-title">SK쉴더스루키즈 25기</div>
+            <div class="section-year">2025.03 ~ 2025.09 | 수료</div>
+          </div>
+          <div class="section-desc">
+            - 보안 기초 교육 (파이썬, 애플리케이션, 네트워크/시스템, 클라우드) </br>
+            - 보안 실무 교육 </br>
+            - 취약점진단 프로젝트 수행 (인프라, 클라우드, 웹 취약점 진단 및 이행조치)
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="about-section">
+        <span class="subheader-text">Experience</span>
+        <div class="about-section-content">
+          교육 경험
+        </div>
+      </div> -->
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
@@ -108,7 +146,7 @@
               </div>
               <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
                 <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+                <img src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
               </a>
             </div>
 
@@ -119,69 +157,28 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="/assets/images/jwpmagicshop.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Infra&Web 취약점진단</div>
+              <div class="body-text project-card-text">SK쉴더스 루키즈 과정에서 팀 단위로 AWS 환경에 웹 애플리케이션을 구축하고, 이를 대상으로 KISA 기반시설 기술적 취약점 분석 평가 상세 가이드와 SK쉴더스 내부 가이드 기준으로 취약점 진단을 수행했습니다. 인증·세션, 입력 검증, 서버 설정 등 주요 영역을 중심으로 식별된 취약점에 대해 이행 조치를 적용했으며, 최종적으로 보안 설정을 강화한 개선 버전을 도출했습니다. </div>
             </div>
-            <a class="button" href="./project-pages/project-template.html">
+            <a class="button" href="/project-pages/project-template1.html">
               <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/code.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
-            </div>
-            <a class="button" href="./project-pages/project-template.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              <img src="/assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
-
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
+    <div id="footer"></div>
+    
+    <script>
+      $(function() {
+        $("#navbar").load("/html/navbar.html");
+        $("#footer").load("/html/footer.html");
+      });
+    </script>
 
 	</body>
 </html>
