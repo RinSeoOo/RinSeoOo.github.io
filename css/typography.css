@@ -28,7 +28,7 @@ body {
 }
 
 .body-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -83,4 +83,40 @@ body {
   font-size: 16px;
   font-weight: 400;
   /* line-height: 1.6; */
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between; /* 좌/우 배치 */
+  align-items: center;
+  margin: 6px 0;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+.info-text a {
+  text-decoration-line: none;
+  color: #555;
+}
+
+.info-text a:hover {
+  text-decoration-line: underline;
+  color: #333;
+  font-weight: 530;
+}
+
+.info-text a:active {
+  text-decoration-line: none;
+  color: #333;
+  font-weight: 530;
 }
